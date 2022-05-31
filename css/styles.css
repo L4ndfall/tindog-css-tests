@@ -1,0 +1,133 @@
+#title {
+  background-color: #ff4c68;
+  overflow: hidden;
+  height: 42rem;
+}
+#titletext{
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: white;
+  /** in some cases including font-weight is a must!!**/
+}
+
+h2{
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  line-height: 1.5;
+  font-size: 1.2rem; /* very important to make text in 1 line at features*/
+}
+
+.container-fluid{
+  padding: 3% 15%;
+}
+
+body {
+font-family: 'Montserrat';
+}
+/** this changes every text in BODY = ALL **/
+
+/* Navigation Bar */
+/* here going from less specific to more specific when styling!!! */
+.navbar{
+  padding: 0 0 4.5rem 0;
+}
+/* PADDING FROM NAVBAR IS CHANGING WITH Bootstrap SO CHANGING LEFT AND RIGHT TO ZERO ALSO */
+
+
+/* this Specified class to brand component is lower */
+.navbar-brand{
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+/* navigation links top right corner */
+.nav-link{
+  padding: 0 18px !important;
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  font-weight: light;
+}
+/* DL BUTTONS CUSTOMS */
+
+.dl-button{
+   margin: 5% 3% 5% 0;   /*THOSE ARE VERY SPECIFIC FOR DL BUTTONS , AFTER PLAYING AROUND ARE WORKING FINE !  */
+}
+
+/* TITLE IMAGE  */
+
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  margin-left: 10%;
+  margin-top: 5%;
+}
+/* here fearures div is taken to format all of the space */
+#features {
+ padding: 7% 15%; /* very important this is a first padding for whole 3 boxes */
+}
+/* MEDIUM CONT */
+
+.mediumcont{
+  text-align: center;
+  padding: 5%; /*this is addational padding for inside each box*/
+}
+
+/* mediu icons styling */
+
+.mediumico{
+/*  font-size: 4rem; - not needed becouse website hat a class to resize icon */
+  margin-bottom: 5%;
+  color: #ef8172;
+}
+.mediumico:hover{
+  color: #ff4c68;
+}
+
+/* feature descriptions */#
+
+ .features-desc{
+   color: #8f8f8f;
+ }
+
+/*testimonials*/
+/* this is section wide section thats why its not good to add padding here*/
+#testimonials{
+
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonial-img{
+  width: 10%; /* to make it smaller*/
+  border-radius: 100%; /* to make it circle*/
+  margin: 20px;
+}
+
+.carousel-item{
+  padding: 7% 15%; /* padding moved from "Testimonial Section to Carousel item to make the 2 buttons stay outside*/
+}
+
+/*press */
+
+#press{
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+
+}
+
+.press-img{
+  width: 15%; /*to make press images smaller and not noticable at first!*/
+  margin: 20px 20px 50px; /* 20 top 20 left and right and 50 bottom to make it look better*/
+
+}
