@@ -25,6 +25,10 @@ works only wirh POSITION: Relative or Absolute or even Fixed work pretty well
 overflow: hidden; - 2nd option
 height: 42rem;
 
+or @media (true argument 1) and (true argument 2) {
+code to be excecuted
+}
+
 ------------------------------------*/
 
 
@@ -184,4 +188,40 @@ font-family: 'Montserrat';
 
 .Pricing-Header{
   font-size: 1.8rem;
+}
+
+/* CTA Section */
+
+#cta{
+  background-color: #ff4c68;
+  color: #fff;
+  padding: 7% 15%;
+  text-align: center; /* use in parent section to apply to all of children containers*/
+}
+
+.cta-heading{
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+/* Footer SEction */
+#footer{
+  padding: 7% 15%;
+    text-align: center;
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+@media (max-width:1028px) {
+
+  #title{
+    text-align: center;
+  }
+  .title-image{
+   position: static;
+   transform: rotate(0);
+  }
 }
