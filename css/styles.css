@@ -1,3 +1,20 @@
+/* - just a short info about class ROW and Grid system :
+
+col-xl  is for larger desktop
+
+col-lg is for desktop
+
+col-md for tablet
+
+col-sm for smartphones in landscape mode
+
+col- (xs) for smartphones in portrait view
+
+- - - - - - - - - - - - - - - */
+
+
+
+
 #title {
   background-color: #ff4c68;
   overflow: hidden;
@@ -122,7 +139,7 @@ font-family: 'Montserrat';
 #press{
   background-color: #ef8172;
   text-align: center;
-  padding-bottom: 3%;
+  padding-bottom: 3%; /*adding some spacing to the downsite*/
 
 }
 
@@ -139,4 +156,8 @@ font-family: 'Montserrat';
 
 .pricing-column {
   padding: 3% 2%; /* just a lil bit of padding to make it look better */
+}
+
+.Pricing-Header{
+  font-size: 1.8rem;
 }
