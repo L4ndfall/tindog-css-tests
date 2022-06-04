@@ -31,14 +31,45 @@ code to be excecuted
 
 ------------------------------------*/
 
+body {
+font-family: 'Montserrat';
+text-align: center;
+}
+/** this changes every text in BODY = ALL **/
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat';
+    font-weight: 900;
+}
+
+
+/* Containers */
+
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+  }
 
 
 
-#title {
-  background-color: #ff4c68;
+.container-fluid{
+  padding: 7% 15%;  /*applies to multiple divs across the webpage*/
 
 }
-#titletext{
+/* SECITONS */
+
+.colored-section{
+background-color: #ff4c68;
+color: #fff;
+}
+
+.white-section{
+background-color:#fff;
+}
+
+/* HEADINGS */
+
+.big-heading{
   font-family: 'Montserrat';
   font-size: 3.5rem;
   line-height: 1.5;
@@ -47,29 +78,11 @@ code to be excecuted
   /** in some cases including font-weight is a must!!**/
 }
 
-h2{
-  font-family: 'Montserrat';
-  font-weight: 900;
+.section-heading{
   font-size: 3rem;
   line-height: 1.5;
 }
 
-h3 {
-  font-family: 'Montserrat';
-  font-weight: 900;
-  line-height: 1.5;
-  font-size: 1.2rem; /* very important to make text in 1 line at features*/
-}
-
-.container-fluid{
-  padding: 3% 15% 7% ; /* TOP LEFTRIGHT BOTTOM */
-
-}
-
-body {
-font-family: 'Montserrat';
-}
-/** this changes every text in BODY = ALL **/
 
 /* Navigation Bar */
 /* here going from less specific to more specific when styling!!! */
@@ -114,15 +127,14 @@ font-family: 'Montserrat';
 }
 /* here fearures div is taken to format all of the space */
 #features {
- padding: 7% 15%; /* very important this is a first padding for whole 3 boxes */
- background-color: #fff; /* - making sure that this div is not transparent!!!*/
+/* padding from container-fluid very important this is a first padding for whole 3 boxes */
+/* white section- making sure that this div is not transparent!!!*/
  position: relative;  /*keeps spacing in html flow so it doesnt move rest of the site to upside*/
  z-index: 1;
 }
 /* MEDIUM CONT */
 
 .mediumcont{
-  text-align: center;
   padding: 5%; /*this is addational padding for inside each box*/
 }
 
@@ -137,19 +149,19 @@ font-family: 'Montserrat';
   color: #ff4c68;
 }
 
-/* feature descriptions */#
+/* feature descriptions */
 
  .features-desc{
    color: #8f8f8f;
  }
 
+.feature-title{
+    font-size: 1.2rem;
+}
 /*testimonials*/
 /* this is section wide section thats why its not good to add padding here*/
 #testimonials{
-
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
 .testimonial-img{
@@ -157,18 +169,17 @@ font-family: 'Montserrat';
   border-radius: 100%; /* to make it circle*/
   margin: 20px;
 }
-
-.carousel-item{
-  padding: 7% 15%; /* padding moved from "Testimonial Section to Carousel item to make the 2 buttons stay outside*/
-}
+ .testimonial-text{
+   font-size: 3rem;
+   line-height: 1.5;
+ }
+/* padding is added in container fluid to make buttons stay away*/
 
 /*press */
 
 #press{
-  background-color: #ef8172;
-  text-align: center;
+    background-color: #ef8172;
   padding-bottom: 3%; /*adding some spacing to the downsite*/
-
 }
 
 .press-img{
@@ -179,37 +190,28 @@ font-family: 'Montserrat';
 
 #pricing {
   padding: 100px;
-    text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%; /* just a lil bit of padding to make it look better */
 }
 
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 .Pricing-Header{
   font-size: 1.8rem;
 }
 
-/* CTA Section */
+/* CTA Section moved using colored section*/
 
-#cta{
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 15%;
-  text-align: center; /* use in parent section to apply to all of children containers*/
+ /* use in parent section to apply to all of children containers*/
 }
 
-.cta-heading{
-  font-family: 'Montserrat';
-  font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-/* Footer SEction */
-#footer{
-  padding: 7% 15%;
-    text-align: center;
-}
+/* Footer SEction - padding done in container fluid */
+
 
 .social-icon{
   margin: 20px 10px;
@@ -218,7 +220,7 @@ font-family: 'Montserrat';
 @media (max-width:1028px) {
 
   #title{
-    text-align: center;
+    text-align: center; /*needs to stay here as it is for media action*/
   }
   .title-image{
    position: static;
