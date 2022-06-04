@@ -12,13 +12,27 @@ col- (xs) for smartphones in portrait view
 
 - - - - - - - - - - - - - - - */
 
+/* ------------ Z INDEX -------------
+
+z-index: -1; - in the back
+
+z-index: 0; - default middle
+
+z-index: 1; - on top presented to user
+
+works only wirh POSITION: Relative or Absolute or even Fixed work pretty well
+
+overflow: hidden; - 2nd option
+height: 42rem;
+
+------------------------------------*/
+
 
 
 
 #title {
   background-color: #ff4c68;
-  overflow: hidden;
-  height: 42rem;
+
 }
 #titletext{
   font-family: 'Montserrat';
@@ -44,7 +58,8 @@ h3 {
 }
 
 .container-fluid{
-  padding: 3% 15%;
+  padding: 3% 15% 7% ; /* TOP LEFTRIGHT BOTTOM */
+
 }
 
 body {
@@ -82,14 +97,23 @@ font-family: 'Montserrat';
 /* TITLE IMAGE  */
 
 .title-image {
-  width: 60%;
+  width: 50%;
   transform: rotate(25deg);
   margin-left: 10%;
   margin-top: 5%;
+  position: absolute;
+  right: 20%; /* - distributes image better to the right */
+}
+
+.reduce-size{
+  position: relative; /*- fixes "too big Picture problem with image"*/
 }
 /* here fearures div is taken to format all of the space */
 #features {
  padding: 7% 15%; /* very important this is a first padding for whole 3 boxes */
+ background-color: #fff; /* - making sure that this div is not transparent!!!*/
+ position: relative;  /*keeps spacing in html flow so it doesnt move rest of the site to upside*/
+ z-index: 1;
 }
 /* MEDIUM CONT */
 
